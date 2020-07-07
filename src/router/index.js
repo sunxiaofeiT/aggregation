@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/music',
+    redirect: '/home-page',
   },
   {
     path: '/resume',
@@ -17,11 +17,17 @@ const routes = [
     path: '/music',
     name: 'music',
     component: () => import('../views/music')
+  },
+  {
+    path: '/home-page',
+    name: 'home-page',
+    component: () => import('../views/home-page')
   }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'hash'
 })
 
 export default router

@@ -1,10 +1,8 @@
-const { turn } = require("core-js/fn/array");
-
 module.exports = {
     devServer: {
         proxy: {
             '/music': {
-                target: 'http://localhost:3000',
+                target: 'http://music.spf.ink/api',
                 ws: true,
                 changeOrigin: true,
                 pathRewrite: {'^/music' : '/'}
