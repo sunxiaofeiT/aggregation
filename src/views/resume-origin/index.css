@@ -1,0 +1,172 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+  font: 14px Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, Tahoma, Arial, sans-serif;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .page-container {
+    padding: 30px 80px 0 80px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .blue-background {
+    background-color: #2955a1;
+  }
+}
+
+button {
+  top: 20px;
+  right: 20px;
+  outline: none;
+  font-size: 16px;
+  position: fixed;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 12px 18px;
+  border: 1px solid #eeeeee;
+  background-color: #409eff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.gray {
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+.page-container {
+  width: 790px;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 4px;
+  padding: 70px 80px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 个人信息 */
+
+.person-info {
+  margin-bottom: 40px;
+}
+
+.person-info span {
+  display: block;
+}
+
+.person-info span+span {
+  margin-top: 10px;
+}
+
+.name {
+  height: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #409eff;
+}
+
+/* 头像 */
+.avater {
+  float: right;
+  width: 125px;
+  height: 150px;
+}
+
+.avater img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* 栏目标题 */
+
+.title-container {
+  width: 790px;
+  margin: 20px 0;
+  font-size: 18px;
+  position: relative;
+}
+
+.title-label {
+  border-left: 4px solid #2955a1;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  min-width: 75px;
+  padding: 5px 12px;
+  margin: 2px 0;
+  color: #2955a1;
+  font-size: 18px;
+  font-weight: 600;
+  /* background: #2955a1; */
+  z-index: 10;
+}
+
+/* .title-left {
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  width: 0;
+  height: 0;
+  margin-top: 0;
+  border-top: 15px solid transparent;
+  border-left: 12px solid #2955a1;
+  border-bottom: 15px solid transparent;
+  z-index: 10;
+} */
+
+.title-right {
+  top: 16px;
+  z-index: 0;
+  width: 682px;
+  margin-left: 110px;
+  position: absolute;
+  border-bottom: 1px #ccc solid;
+}
+
+/* 信息标题 */
+
+.title-info {
+  color: #444444;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.title-info span {
+  display: inline-block;
+}
+
+.title-info .time, .title-info .location, .title-info .sub-info {
+  width: 260px;
+}
+
+/* 具体信息 */
+
+.detail-info {
+  font-size: 15px;
+  line-height: 24px;
+  color: #6c6c66;
+}
+
+.detail-info ol {
+  padding-left: 20px;
+}
+
+/* 通用 */
+
+ol {
+  padding-left: 20px;
+}
+
+ol ul {
+  padding-left: 20px;
+}

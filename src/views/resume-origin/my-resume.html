@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>孙鹏飞简历</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <link type="text/css" rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+  <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script> -->
+</head>
+
+<body>
+
+  <button id="print" class="no-print">打印简历</button>
+
+  <div id="resume" class="page-container">
+
+    <!-- personal infomation -->
+    <div class="person-info">
+      <div class="avater">
+        <img class="avater-img" alt="简历头像" src="./简历编辑器_简历本_files/cv_idphoto_471569_b.jpg">
+      </div>
+      <span class="name gray">孙鹏飞</span>
+      <span class="base-info gray">男 | 24岁 | 1年经验 | 本科 | 18500076628 | sun_kk@outlook | 前端开发</span>
+      <span class="desc gray">适应、学习、自主、思考</span>
+      <span class="dream gray">期望：前端基础建设工作 or C端产品开发</span>
+    </div>
+
+    <!-- component title -->
+    <div class="title-container">
+      <div class="title-label blue-background">教育背景</div>
+      <div class="title-left"></div>
+      <div class="title-right"></div>
+    </div>
+
+    <!-- information title -->
+    <div class="title-info">
+      <span class="time">2015.09 -- 2019.06</span>
+      <span class="location">天津大学</span>
+      <span class="sub-info">软件工程专业 -- 本科</span>
+    </div>
+
+    <!-- component title -->
+    <div class="title-container">
+      <div class="title-label">工作经历</div>
+      <div class="title-left"></div>
+      <div class="title-right"></div>
+    </div>
+
+    <!-- information title -->
+    <div class="title-info">
+      <span class="time">2019.04 -- 至今</span>
+      <span class="location">美菜-云杉世界信息技术有限公司</span>
+      <span class="sub-info">软件工程专业 -- 本科</span>
+    </div>
+
+    <!-- work ins -->
+    <div class="detail-info">
+      <ol>
+        <li>业务需求开发工作
+          <ul>
+            <li>小程序商城开发，是一个电商平台，商品主要是食物蔬菜等。参与从 wepy 到 微信原生的重构工作；负责中秋会场活动页及其配置页的开发。</li>
+            <li>运营后台管理系统开发，是上边小程序以及APP对应的运营管理后端系统，使用的是 VUE，独立负责各个需求评审、设计、开发、上线，无线上问题。其间，积极优化代码，抽取组件。
+            </li>
+            <li>售后系统开发，是一个售后的中台系统，主要功能是链接客服、配送、财务等系统，实现售后的各种业务逻辑（如换货、退款等），使用 VUE，规范项目结构，标准项目代码，例如
+              API的集中封装调用、本地开发环境变量等</li>
+            <li>地理信息系统开发，共分为两个系统，一个是管理系统，侧重仓库、服务区等和业务相关的管理功能；另一个是分析平台，侧重数据可视化、挖掘数据的业务价值。使用VUE +
+              高德地图、百度地图API，独立进行管理系统重构工作（VUE）以及组件库开发。</li>
+          </ul>
+        </li>
+        <li>效率提升
+          <ul>
+            <li>抽取公用复杂组件，后台类页面开发时间缩短到一到两天。地图组件库，目的是对外输出数据+地图相关开发经验</li>
+            <li>自动化的尝试，gitlab ci自动脚本实现test环境的自动发布；git hook 勾子实现 npm 包的自动发布、通知等</li>
+          </ul>
+        </li>
+        <li>通用工具的开发
+          <ul>
+            <li>NPM 自动发布，通过 web hook 钩子以及约定，拉取代码(tag)，自动发布</li>
+            <li> 基于 vuepress 的可扩展的支持在线编写的 markdown 文档平台 </li>
+          </ul>
+        </li>
+        <li>主观总结
+          <ul>
+            <li>学习适应能力较强，无论是新的项目还是新的技术，上手较快。</li>
+            <li>想要努力写出规范漂亮的代码，学习 element-ui 源码并组内分享。</li>
+            <li>技术项目多参与、多学习。学习组内项目Node网关、参与微前端建设（进程缓慢）</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- component title -->
+    <div class="title-container">
+      <div class="title-label">技能描述</div>
+      <div class="title-left"></div>
+      <div class="title-right"></div>
+    </div>
+
+    <div class="detail-info">
+      <ol>
+        <li>VUE 熟练掌握。因为目前工作内容大多是 VUE。例如更标准VUE项目、VUE与地图开发结合，了解其原理。</li>
+        <li>React 基本掌握。React 平时学习了解，组内分享。在对外提供地图相关组件的时候，使用到了 React。</li>
+        <li>地图相关开发，例如基础的地图展示、地图与数据结合、大数据情况下的加载显示优化等。</li>
+        <li>NodeJs 基本掌握，NPM包的自动发布为 Node 项目，还有学习的 Node 网关项目。</li>
+        <li>HTML、CSS、JS 熟练掌握，其为基础。</li>
+        <li>前端工程化方面，打包工具 webpack 最熟悉、rollup 等了解。前端测试、部署等过程熟悉。</li>
+      </ol>
+    </div>
+
+    <!-- component title -->
+    <div class="title-container">
+      <div class="title-label">自我评价</div>
+      <div class="title-left"></div>
+      <div class="title-right"></div>
+    </div>
+
+    <div class="detail-info">
+      在简历的最开头，我用 “适应、学习、自主、思考” 这四个关键字形容我自己。说一下为什么是这四个关键字。
+      <ol>
+        <li>适应：项目更换，新项目、或者新技术，能做到快速上手，已形成了自己的经验。</li>
+        <li>学习：除了善于学习可以使我快速投入新的开发中，平时也有意识在学习，例如文档平台的尝试，参与微前端构建等，都是在尝试学习新的东西。但也深知自己的学习有些浅尝辄止，这也是之后的改进重点。</li>
+        <li>自主：平时工作中，我都喜欢自己摸索、尝试，去优化改进，但是自己缺少主动曝光、分享的想法。</li>
+        <li>思考，对自己做的东西有自己的想法思考，例如弄清业务来龙去脉、给系统加个反馈入口等。不做工具人。</li>
+      </ol>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
