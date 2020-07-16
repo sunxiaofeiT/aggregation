@@ -17,6 +17,9 @@ html, body {
   .blue-background {
     background-color: #2955a1;
   }
+  .page-container {
+    scale: 0.8;
+  }
 }
 
 button {
@@ -60,18 +63,24 @@ button:hover {
 
 .person-info span {
   display: block;
+  font-size: 14px;
 }
 
 .person-info span+span {
   margin-top: 10px;
 }
 
-.name {
+.person-info .name {
   height: 40px;
   font-size: 32px;
   font-weight: bold;
   line-height: 40px;
   color: #409eff;
+}
+
+.github, .email {
+  color: #409eff;
+  text-decoration: none;
 }
 
 /* 头像 */
@@ -130,7 +139,7 @@ button:hover {
   width: 682px;
   margin-left: 110px;
   position: absolute;
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px #2955a1 solid;
 }
 
 /* 信息标题 */
