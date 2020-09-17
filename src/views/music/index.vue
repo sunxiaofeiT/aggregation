@@ -15,7 +15,8 @@
         </div>
         <div class="music-list">
           <div v-for="(item, index) in musicArr" :key="index" class="each-music">
-            <span class="name">{{ item.name }}</span>
+            <span class="number">{{ index + 1 }}</span>
+            <el-button type="text" class="name" size="large" @click="onClickDown(item)">{{ item.name }}</el-button>
           </div>
         </div>
       </el-col>
@@ -26,6 +27,8 @@
 <script>
 import axios from "axios";
 import * as FileSaver from "file-saver";
+
+const host = '//music.spf.ink/api'
 
 export default {
   name: "music",
@@ -40,24 +43,32 @@ export default {
   methods: {
     onSearchMusicName() {
       this.isSearching = true;
-      axios.post(`/music/search?keywords=${this.name}`).then(res => {
+      axios.post(`${host}/search?keywords=${this.name}`).then(res => {
         console.log(res.data);
         this.musicArr = res.data.result.songs || [];
-        this.getUrlById(this.musicArr[0].id);
         this.isSearching = false;
       });
     },
 
     getUrlById(id) {
-      axios.post(`/music/song/url?id=${id}`).then(res => {
+      axios.post(`${host}/song/url?id=${id}`).then(res => {
         console.log(res.data.data);
         const songs = res.data.data;
         this.downloadByUrl(songs[0]);
       });
     },
 
+    onClickDown(item) {
+      console.log(item)
+      if (!item.id) return
+      this.currentMusic = item
+      this.$message.success('正在下载...')
+      this.getUrlById(item.id)
+    },
+
     downloadByUrl(music) {
-      FileSaver.saveAs(music.url, music.name);
+      console.log(music)
+      FileSaver.saveAs(music.url, this.currentMusic.name);
     }
   }
 };
@@ -81,6 +92,14 @@ export default {
     .buttons {
       text-align: right;
       margin-top: 20px;
+    }
+  }
+  .each-music {
+    margin: 0px 4px;
+    // padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    .number {
+      margin-right: 10px;
     }
   }
 }
