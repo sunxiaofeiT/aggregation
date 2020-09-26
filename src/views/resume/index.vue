@@ -14,7 +14,7 @@
         <span class="base-info gray">
           男 | 24岁 | 1年经验 | 本科 | 18500076628 | 前端开发 |
           <a class="github" href="https://github.com/sunxiaofeiT" target="_blank"> Github </a> |
-          <a class="email" href="mailto:sun_kk@outlook ">sun_kk@outlook</a>
+          <a class="email" :href="`mailto:${email}`">{{email}}</a>
         </span>
         <span class="desc gray">适应、学习、自主、思考</span>
         <!-- <span class="dream gray">期望：前端基础建设工作 or C端产品开发</span> -->
@@ -126,6 +126,7 @@ export default {
   data() {
     return {
       avater,
+      email: 'sun_kk@outlook.com'
     }
   },
   methods: {
