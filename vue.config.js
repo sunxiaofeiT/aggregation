@@ -1,4 +1,6 @@
 module.exports = {
+    outputDir: 'music.spf.ink',
+    productionSourceMap: false,
     devServer: {
         proxy: {
             '/music': {

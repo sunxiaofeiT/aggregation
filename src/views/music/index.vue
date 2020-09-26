@@ -40,6 +40,9 @@ export default {
       isSearching: false
     };
   },
+  created() {
+    window.document.title = '歌曲下载'
+  },
   methods: {
     onSearchMusicName() {
       this.isSearching = true;

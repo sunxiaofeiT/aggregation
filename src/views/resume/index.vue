@@ -129,6 +129,9 @@ export default {
       email: 'sun_kk@outlook.com'
     }
   },
+  created() {
+    window.document.title = '个人简历'
+  },
   methods: {
     onPrint() {
       document.body.style.visibility = 'hidden'
